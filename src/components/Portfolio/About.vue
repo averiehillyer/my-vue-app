@@ -6,6 +6,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 
 <template>
   <portfolio-template>
+    <img src="../../assets/Genesis Curlz-74_websize.jpg"/>
     <h1>About</h1>
         <h2>Hi, I'm Averie Hillyer.</h2>
         <p>I am a current student at the University of Minnesota Twin Cities, studying Graphic Design and Interdisciplinary
@@ -27,5 +28,9 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
     </template>
 
     <style scoped>
+    img{
+      height: 96%;
+      width: 96%;
+    }
 
     </style>

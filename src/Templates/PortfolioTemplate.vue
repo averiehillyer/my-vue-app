@@ -8,7 +8,7 @@ import ContactMe from "../components/Portfolio/ContactMe.vue";
 <template>
   <section class="portfolio-layout">
     <nav>
-      <a href="#">Logo</a>
+      <router-link :to="{name: 'PortfolioHome'}">Logo</router-link>
       <div class="hamburger">hamburger</div>
       <div class="full-nav">
         <router-link :to="{name: 'About'}">about</router-link>
@@ -37,8 +37,22 @@ section.portfolio-layout {
   nav {
     display: flex;
     justify-content: space-between;
-    border: 10px solid red;
     font-size: 1rem;
+
+    a{
+      color: black;
+      text-decoration: none;
+
+      &.router-link-active{
+        font-weight: bold;
+        color: #305fc1;
+      }
+
+      &:hover {
+        color: #9f9f9f;
+      }
+    }
+
 
     .full-nav {
       display: none;

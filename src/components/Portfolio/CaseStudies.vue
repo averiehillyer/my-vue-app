@@ -8,20 +8,27 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 <template>
   <portfolio-template>
       <h1>Case Studies</h1>
+    <h2>Medium</h2>
+    <img src="../../assets/Portfolio Items/Curlz Case Study.png"/>
+    <p>this is my process for this project</p>
+    <h2>Medium</h2>
+    <img src="../../assets/Portfolio Items/MCI Case Study.png"/>
+    <p>this is my process for this project</p>
+    <h2>Medium</h2>
+    <img src="../../assets/Portfolio Items/Saltait Case Study.png" height="1500" width="1500"/>
+    <p>this is my process for this project</p>
 
-      <section class="cards">
-        <card v-for="(work, index) in portfolioPics.data"
-              :key="index" :work-info="work"/>
-      </section>
+<!--      <section class="cards">-->
+<!--        <card v-for="(work, index) in portfolioPics.data"-->
+<!--              :key="index" :work-info="work"/>-->
+<!--      </section>-->
 
   </portfolio-template>
 </template>
 
 <style scoped>
-section.cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: flex-start;
+img{
+  height: 40%;
+  width: 40%;
 }
 </style>
