@@ -24,13 +24,23 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
           love how much music can impact an individual and I also love how much beauty can impact an individual. I want to
           create things that can evoke the same emotions that those do.
         </p>
-      </portfolio-template>
+    <router-link :to="{name: 'PortfolioWork'}"><img class="img-button" src="../../assets/seemyart.png"/></router-link>
+  </portfolio-template>
     </template>
 
     <style scoped>
     img{
       height: 96%;
       width: 96%;
+    }
+
+    .img-button{
+      height: 20%;
+      width: 20%;
+    }
+
+    a{
+      border: black;
     }
 
     </style>

@@ -12,6 +12,8 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
       free-time, and even some freelance work as well.</p>
     <p>This site has an extensive bio on myself that discusses my education path, my career interests, as well as some of
       my professional experience that I currently have, and some professional endeavors that I would love to explore.</p>
+    <router-link :to="{name: 'PortfolioWork'}"><img class="img-button" src="../../assets/seetheart.png"/></router-link>
+    <router-link :to="{name: 'About'}"><img class="img-button" src="../../assets/aboutme.png"/></router-link>
   </portfolio-template>
 
 </template>
@@ -20,5 +22,14 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 img{
   height: 96%;
   width: 96%;
+}
+
+.img-button{
+  height: 20%;
+  width: 20%;
+}
+
+a{
+  border: black;
 }
 </style>

@@ -5,8 +5,8 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 
 <template>
   <portfolio-template>
-    <img src="../../assets/Headshot.jpg" />
     <h1>Contact Me</h1>
+    <img src="../../assets/Headshot.jpg" />
     <p>I appreciate you taking the time to browse through my creative endeavors. If you have any questions or comments,
       please feel free to reach out to me at any of the following. I am always looking to work on new projects and learn
       new skills.</p>
@@ -20,6 +20,10 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 <style scoped>
 img{
   width: 30%;
+}
+
+h1 {
+  text-align: center;
 }
 
 </style>
