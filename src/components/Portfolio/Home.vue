@@ -29,6 +29,10 @@ img{
   width: 20%;
 }
 
+p{
+  text-align: end;
+}
+
 a{
   border: black;
 }

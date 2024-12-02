@@ -30,9 +30,10 @@ section.portfolio-layout {
   margin: 0 auto;
 
   * {
-    border: 1px solid black;
+    //border: 1px solid black;
     margin: 1rem;
   }
+
 
   nav {
     display: flex;

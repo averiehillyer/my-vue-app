@@ -39,8 +39,36 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
       width: 20%;
     }
 
+    p{
+      text-align: end;
+    }
+
     a{
       border: black;
+    }
+
+    h2{
+      text-align: end;
+    }
+
+    @media screen and (width <= 700px) {
+      h1{
+        transform: rotate(270deg);
+        padding-right: 210px;
+      }
+      img{
+        max-width: 40%;
+      }
+    }
+
+
+      @media screen and (width >= 700px) {
+      p{
+        text-align: left;
+      }
+      h2{
+        text-align: left;
+      }
     }
 
     </style>
