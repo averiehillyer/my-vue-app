@@ -10,7 +10,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
     <div class="genesis">
     <h1>Case Studies</h1>
     <h3>Social Media</h3>
-    <a href="../../assets/Portfolio Items/Curlz Case Study.png"><img src="../../assets/Portfolio Items/Curlz Case Study.png"/></a>
+    <a href="../../assets/portfolio-items/Curlz Case Study.png"><img src="../../assets/portfolio-items/Curlz Case Study.png"/></a>
     <h2>Genesis Curlz Social Media</h2>
     <p>One of my creative passions surrounds beauty. Since 2022, I have been working under a Curl Specialist named Jesse
       Sadergaski with Genesis Curlz. Along with some hands on experience in the salon, I have served Genesis Curlz
@@ -21,7 +21,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 
     <div class="mci">
     <h3>Website</h3>
-    <a href="https://www.shipmci.com/"><img src="../../assets/Portfolio Items/MCI Case Study.png"/></a>
+    <a href="https://www.shipmci.com/"><img src="../../assets/portfolio-items/MCI Case Study.png"/></a>
     <h2>MCI Site Development</h2>
     <p>MCI - formerly known as Midwest Consolidators International - approached me inquiring about designing their
       website. I was given the opportunity to work with the team to identify what they wanted to be included on their
@@ -31,7 +31,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 
     <div class="saltair">
     <h3>Virtual Mock-up</h3>
-    <a href="../../assets/Portfolio Items/Saltait Case Study.png"><img src="../../assets/Portfolio Items/Saltait Case Study.png"/></a>
+    <a href="../../assets/portfolio-items/Saltait Case Study.png"><img src="../../assets/portfolio-items/Saltait Case Study.png"/></a>
     <h2>Saltair Redesign</h2>
     <p>Saltair is a beauty company that specializes in body wash, shampoo, conditioner, and other body care items. For a
       class project, I was assigned with redesigning existing packaging that I was able to find in the store. Instead of
@@ -50,6 +50,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 img{
   height: 40%;
   width: 40%;
+  margin-left: -6px;
 }
 
 h1{
@@ -66,6 +67,11 @@ h2{
 h3 {
   font-size: 24px;
   text-align: left;
+}
+
+p{
+  max-width: 500px;
+  text-align: justify;
 }
 
 /*tablet and up*/

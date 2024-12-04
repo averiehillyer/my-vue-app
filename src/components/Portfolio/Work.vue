@@ -8,26 +8,26 @@ import portfolio from "../../Portfolio.js"
   <portfolio-template>
     <h1>Work</h1>
     <div class="images">
-      <img src="../../assets/Portfolio Items/AmIAliveListing.png"/>
-      <img src="../../assets/Portfolio Items/Channel Orange Listing.png"/>
-      <img src="../../assets/Portfolio Items/Daniel Caesar Listing.png"/>
-      <img src="../../assets/Portfolio Items/Faiyaz Listing.png"/>
-      <img src="../../assets/Portfolio Items/Frank Ocean Listing.png"/>
-      <img src="../../assets/Portfolio Items/Kill Bill Listing.png"/>
-      <img src="../../assets/Portfolio Items/Nostalgia,Ultra.Listing.png"/>
-      <img src="../../assets/Portfolio Items/Orange SiR.png">
-      <img src="../../assets/Portfolio Items/SZA Listing.png"/>
-      <img src="../../assets/Portfolio Items/What You Heard Listing.png"/>
-      <img src="../../assets/Portfolio Items/Spread 1.png"/>
-      <img src="../../assets/Portfolio Items/Spread 2.png"/>
-      <img src="../../assets/Portfolio Items/Spread 3.png"/>
-      <img src="../../assets/Portfolio Items/Spread 4.png"/>
-      <img src="../../assets/Portfolio Items/Spread 5.png"/>
-      <img src="../../assets/Portfolio Items/Spread 6.png"/>
-      <img src="../../assets/Portfolio Items/Spread 7.png"/>
-      <img src="../../assets/Portfolio Items/Spread 8.png"/>
-      <img src="../../assets/Portfolio Items/Spread 9.png"/>
-      <img src="../../assets/Portfolio Items/Spread 10.png"/>
+      <img src="../../assets/portfolio-items/AmIAliveListing.png"/>
+      <img src="../../assets/portfolio-items/Channel Orange Listing.png"/>
+      <img src="../../assets/portfolio-items/Daniel Caesar Listing.png"/>
+      <img src="../../assets/portfolio-items/Faiyaz Listing.png"/>
+      <img src="../../assets/portfolio-items/Frank Ocean Listing.png"/>
+      <img src="../../assets/portfolio-items/Kill Bill Listing.png"/>
+      <img src="../../assets/portfolio-items/Nostalgia,Ultra.Listing.png"/>
+      <img src="../../assets/portfolio-items/Orange SiR.png">
+      <img src="../../assets/portfolio-items/SZA Listing.png"/>
+      <img src="../../assets/portfolio-items/What You Heard Listing.png"/>
+      <img src="../../assets/portfolio-items/Spread 1.png"/>
+      <img src="../../assets/portfolio-items/Spread 2.png"/>
+      <img src="../../assets/portfolio-items/Spread 3.png"/>
+      <img src="../../assets/portfolio-items/Spread 4.png"/>
+      <img src="../../assets/portfolio-items/Spread 5.png"/>
+      <img src="../../assets/portfolio-items/Spread 6.png"/>
+      <img src="../../assets/portfolio-items/Spread 7.png"/>
+      <img src="../../assets/portfolio-items/Spread 8.png"/>
+      <img src="../../assets/portfolio-items/Spread 9.png"/>
+      <img src="../../assets/portfolio-items/Spread 10.png"/>
     </div>
   </portfolio-template>
 </template>

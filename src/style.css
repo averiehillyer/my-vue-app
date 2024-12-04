@@ -36,7 +36,7 @@ footer {
 }
 
 /* Tablet and up */
-@media screen and (width >= 700px) {
+@media screen and (width >= 550px) {
     h1 {
         font-size: 3rem;
     }

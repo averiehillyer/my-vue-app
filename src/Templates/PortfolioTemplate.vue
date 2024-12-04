@@ -60,12 +60,6 @@ section.portfolio-layout {
     }
   }
 
-  section.contents {
-    h1 {
-      text-align: right;
-    }
-  }
-
   /* Tablet and up */
   @media screen and (width >= 700px) {
     nav {
