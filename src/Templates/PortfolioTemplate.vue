@@ -8,8 +8,8 @@ import ContactMe from "../components/Portfolio/ContactMe.vue";
 <template>
   <section class="portfolio-layout">
     <nav>
-      <router-link :to="{name: 'PortfolioHome'}">Logo</router-link>
-      <div class="hamburger">hamburger</div>
+      <router-link :to="{name: 'PortfolioHome'}"><img src="/Users/averiehillyer/Desktop/my-vue-app/src/components/svgs/Hilly.svg"/></router-link>
+      <div class="hamburger"><img src="/Users/averiehillyer/Desktop/my-vue-app/src/components/svgs/hamburger-menu-svgrepo-com.svg"></div>
       <div class="full-nav">
         <router-link :to="{name: 'About'}">about</router-link>
         <router-link :to="{name: 'PortfolioWork'}">work</router-link>
@@ -26,23 +26,29 @@ import ContactMe from "../components/Portfolio/ContactMe.vue";
 <style>
 section.portfolio-layout {
   /* Mobile first styles here */
-  max-width: 900px;
-  margin: 0 auto;
-
-  * {
-    //border: 1px solid black;
-    margin: 1rem;
-  }
-
+  //max-width: 900px;
+  //margin: 0 auto;
 
   nav {
     display: flex;
     justify-content: space-between;
     font-size: 1rem;
+    margin: 1rem;
+
+    .hamburger{
+      display: flex;
+      width: 30%;
+      justify-content: end;
+    }
+
+    img{
+      width: 20%;
+    }
 
     a{
       color: black;
       text-decoration: none;
+      margin: 1rem;
 
       &.router-link-active{
         font-weight: bold;
@@ -61,7 +67,7 @@ section.portfolio-layout {
   }
 
   /* Tablet and up */
-  @media screen and (width >= 700px) {
+  @media screen and (width >= 714px) {
     nav {
       .full-nav {
         display: block;
@@ -74,3 +80,4 @@ section.portfolio-layout {
   }
 }
 </style>
+

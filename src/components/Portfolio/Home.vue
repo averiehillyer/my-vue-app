@@ -60,26 +60,29 @@ div.button-links {
   flex-direction: column; /* Stacks the items vertically */
   align-items: center; /* Centers the items horizontally */
   justify-content: center; /* Centers the images vertically */
-  margin-top: -30px;
-  border: 3px solid blue;
-  max-width: 500px;
-}
-
-div.button-links img {
-  margin-bottom: -50px;
 }
 
 div.content {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 div.infoside {
   border: 10px solid red;
+  max-width: 500px;
 }
 
 div.buttonside {
   border: 10px solid green;
+  max-width: 500px;
+}
+
+/*tablet and up*/
+@media screen and (width >= 550px) {
+  .content{
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 /*can't figure out how to get buttons to sit on right side of info

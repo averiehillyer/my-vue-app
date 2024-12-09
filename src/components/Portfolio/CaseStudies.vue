@@ -50,18 +50,19 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 img{
   height: 40%;
   width: 40%;
-  margin-left: -6px;
+  //margin-left: -6px;
 }
 
 h1{
   font-size: 80px;
+  text-align: center;
 }
 
 a{
   border: #305fc1;
 }
 h2{
-  margin-top: -20px;
+  //margin-top: -20px;
 }
 /* Default styles */
 h3 {
@@ -75,7 +76,7 @@ p{
 }
 
 /*tablet and up*/
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   h3 {
     transform: rotate(90deg);
     text-align: right;
@@ -88,6 +89,10 @@ p{
   .genesis{
     flex-wrap: wrap;
 
+  }
+
+  h1{
+    text-align: end;
   }
 }
 

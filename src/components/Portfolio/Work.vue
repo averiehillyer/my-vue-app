@@ -1,33 +1,23 @@
 <script setup>
 
 import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
-import portfolio from "../../Portfolio.js"
+import portfolio from "../../MOCK_DATA.js"
 </script>
 
 <template>
   <portfolio-template>
     <h1>Work</h1>
     <div class="images">
-      <img src="../../assets/portfolio-items/AmIAliveListing.png"/>
-      <img src="../../assets/portfolio-items/channel-orange-listing.png"/>
-      <img src="../../assets/portfolio-items/Daniel-caesar-listing.png"/>
-      <img src="../../assets/portfolio-items/Faiyaz-listing.png"/>
-      <img src="../../assets/portfolio-items/Frank-ocean-listing.png"/>
-      <img src="../../assets/portfolio-items/Kill-bill-listing.png"/>
-      <img src="../../assets/portfolio-items/Nostalgia-ultra-listing.png"/>
-      <img src="../../assets/portfolio-items/Orange-SiR.png">
-      <img src="../../assets/portfolio-items/SZA-listing.png"/>
-      <img src="../../assets/portfolio-items/What-you-heard-listing.png"/>
-      <img src="../../assets/portfolio-items/Spread-1.png"/>
-      <img src="../../assets/portfolio-items/Spread-2.png"/>
-      <img src="../../assets/portfolio-items/Spread-3.png"/>
-      <img src="../../assets/portfolio-items/Spread-4.png"/>
-      <img src="../../assets/portfolio-items/Spread-5.png"/>
-      <img src="../../assets/portfolio-items/Spread-6.png"/>
-      <img src="../../assets/portfolio-items/Spread-7.png"/>
-      <img src="../../assets/portfolio-items/Spread-8.png"/>
-      <img src="../../assets/portfolio-items/Spread-9.png"/>
-      <img src="../../assets/portfolio-items/Spread-10.png"/>
+      <div v-for="(project, index) in portfolio.data" class="project">
+        <img :src="'/src/assets/portfolio-items/' + project.image + '.png'"/>
+        <p>{{ project.name }}</p>
+      </div>
+    </div>
+
+    <div class="arrow_button">
+      <a href="">
+        <img src="../svgs/arrow-up-lg-svgrepo-com.svg" alt=""/>
+      </a>
     </div>
   </portfolio-template>
 </template>
@@ -35,19 +25,37 @@ import portfolio from "../../Portfolio.js"
 <style scoped>
 div.images {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.1rem;
+  gap: 1rem;
+  flex-direction: column;
 
-  img {
-    max-width: 40%;
-  }
 
-/*tablet and up*/
+  .project {
+    width: 100%;
+    //border: 10px solid black;
 
-  @media screen and (width >= 700px) {
     img {
-      max-width: 20%;
+      width: 100%;
     }
   }
+
+  /*tablet and up*/
+
+  @media screen and (width >= 700px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .project {
+      width: 30%;
+    }
+  }
+}
+
+.arrow_button{
+  display: flex;
+  justify-content: end;
+}
+.arrow_button img {
+  display: flex;
+  width: 50px;
+  margin: 15px;
 }
 </style>
