@@ -1,13 +1,13 @@
 <script setup>
-
-import PrimaryTemplate from "../../Templates/wrongtemplate.vue";
 import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 </script>
 
 <template>
   <portfolio-template>
-    <img src="../../assets/Genesis Curlz-74_websize.jpg"/>
+    <img src="../../assets/AboutPageHome.png"/>
     <h1>About</h1>
+    <div class="aboutcontent">
+      <div class="about-text">
         <h2>Hi, I'm Averie Hillyer.</h2>
         <p>I am a current student at the University of Minnesota Twin Cities, studying Graphic Design and Interdisciplinary
           Design which allows me to explore various design mediums. Starting out as a Journalism major, I have always had an
@@ -24,19 +24,29 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
           love how much music can impact an individual and I also love how much beauty can impact an individual. I want to
           create things that can evoke the same emotions that those do.
         </p>
+      </div>
+      <div class="myworkbutton">
     <router-link :to="{name: 'PortfolioWork'}"><img class="img-button" src="../../assets/seemyart.png"/></router-link>
+      </div>
+    </div>
   </portfolio-template>
     </template>
 
     <style scoped>
     img{
-      height: 96%;
-      width: 96%;
+      height: auto;
+      width: 100%;
     }
 
-    .img-button{
-      height: 20%;
-      width: 20%;
+    h1{
+      padding-left: 1rem;
+      color: white;
+    }
+
+    .aboutcontent{
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
     }
 
     p{
@@ -51,24 +61,69 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
       text-align: end;
     }
 
+    .myworkbutton{
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      width: 100%;
+    }
+
+    .myworkbutton img{
+      width: 12rem;
+    }
+
     @media screen and (width <= 700px) {
       h1{
         transform: rotate(270deg);
-        padding-right: 210px;
+        margin-left: -20px;
+        text-align: end;
+        width: 100px;
+        margin-top: -80px;
+        font-size: 3rem;
+        color: white;
       }
       img{
-        max-width: 40%;
+        max-width: 100%;
       }
+
     }
 
 
-      @media screen and (width >= 700px) {
+      @media screen and (width >= 701px) {
       p{
-        text-align: left;
+        text-align: justify;
       }
       h2{
         text-align: left;
       }
+      h1{
+        font-size: 5rem;
+        transform: rotate(0deg);
+        text-align: end;
+        width: 100px;
+        margin-top: -90px;
+      }
+      .aboutcontent{
+        margin-top: -100px;
+      }
     }
+
+    @media screen and (width >= 850px) {
+      .aboutcontent{
+        display: flex;
+        flex-direction: row;
+      }
+      .myworkbutton{
+        display: flex;
+        padding: 20px;
+        align-items: end;
+        justify-content: end;
+      }
+      h1{
+        font-size: 7rem;
+        margin-top: -150px;
+      }
+    }
+
 
     </style>

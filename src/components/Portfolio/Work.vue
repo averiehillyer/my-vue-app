@@ -23,15 +23,24 @@ import portfolio from "../../MOCK_DATA.js"
 </template>
 
 <style scoped>
+h1{
+  padding: 1rem;
+  font-size: 3rem;
+  margin-bottom: -10px;
+  text-align: end;
+}
+
 div.images {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+  padding: 1rem;
+  align-content: center;
+  justify-content: center;
 
 
   .project {
     width: 100%;
-    //border: 10px solid black;
 
     img {
       width: 100%;
@@ -39,12 +48,11 @@ div.images {
   }
 
   /*tablet and up*/
-
-  @media screen and (width >= 700px) {
+  @media screen and (width >= 680px) {
     flex-direction: row;
     flex-wrap: wrap;
     .project {
-      width: 30%;
+      width:30%;
     }
   }
 }
@@ -58,4 +66,17 @@ div.images {
   width: 50px;
   margin: 15px;
 }
+
+div.images{
+  @media screen and (width >= 900px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .project {
+      width:20%;
+    }
+  }
+}
+
+
+
 </style>
