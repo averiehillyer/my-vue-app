@@ -23,21 +23,26 @@ const router = createRouter({
         {
             path: '/portfolio/work',
             name: 'PortfolioWork',
-            component: PortfolioWork
-        },
-        {
-            path: '/portfolio/work/details/:portfolioItemId',
-            name: 'PortfolioDetails',
-            component: PortfolioDetails
+            children: [
+                {
+                    path: '',
+                    component: PortfolioWork,
+                },
+                {
+                    path: 'details/:portfolioItemId',
+                    name: 'PortfolioDetails',
+                    component: PortfolioDetails
+                }
+            ]
         },
         {
             path: '/contactme',
-            name:'ContactMe',
+            name: 'ContactMe',
             component: ContactMe
         },
         {
             path: '/casestudies',
-            name:'CaseStudies',
+            name: 'CaseStudies',
             component: CaseStudies
         }
     ]

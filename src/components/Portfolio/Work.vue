@@ -9,8 +9,13 @@ import portfolio from "../../MOCK_DATA.js"
     <h1>Work</h1>
     <div class="images">
       <div v-for="(project, index) in portfolio.data" class="project">
-        <img :src="'/src/assets/portfolio-items/' + project.image + '.png'"/>
+
+        <router-link :to="{name: 'PortfolioDetails', params: { portfolioItemId: project.id }}">
+          <img :src="'/src/assets/portfolio-items/' + project.image + '.png'"/>
+        </router-link>
+
         <p>{{ project.name }}</p>
+
       </div>
     </div>
 
@@ -23,7 +28,7 @@ import portfolio from "../../MOCK_DATA.js"
 </template>
 
 <style scoped>
-h1{
+h1 {
   padding: 1rem;
   font-size: 3rem;
   margin-bottom: -10px;
@@ -52,31 +57,31 @@ div.images {
     flex-direction: row;
     flex-wrap: wrap;
     .project {
-      width:30%;
+      width: 30%;
     }
   }
 }
 
-.arrow_button{
+.arrow_button {
   display: flex;
   justify-content: end;
 }
+
 .arrow_button img {
   display: flex;
   width: 50px;
   margin: 15px;
 }
 
-div.images{
+div.images {
   @media screen and (width >= 900px) {
     flex-direction: row;
     flex-wrap: wrap;
     .project {
-      width:20%;
+      width: 20%;
     }
   }
 }
-
 
 
 </style>
