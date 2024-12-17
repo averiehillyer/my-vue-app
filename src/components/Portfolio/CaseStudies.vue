@@ -10,7 +10,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
     <h1>Case Studies</h1>
     <div class="genesis">
     <h3>Social Media</h3>
-    <a href="../../assets/portfolio-items/Curlz-case-study.png"><img src="../../assets/portfolio-items/Curlz-case-study.png"/></a>
+    <a href="https://www.instagram.com/genesiscurlz/"><img src="../../assets/portfolio-items/Curlz-case-study.png"/></a>
     <h2>Genesis Curlz Social Media</h2>
     <p>One of my creative passions surrounds beauty. Since 2022, I have been working under a Curl Specialist named Jesse
       Sadergaski with Genesis Curlz. Along with some hands on experience in the salon, I have served Genesis Curlz
@@ -31,7 +31,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
 
     <div class="saltair">
     <h3>Virtual Mock-up</h3>
-    <a href="../../assets/portfolio-items/Saltair-case-study.png"><img src="../../assets/portfolio-items/Saltair-case-study.png"/></a>
+    <a href="https://saltair.com/"><img src="../../assets/portfolio-items/Saltair-case-study.png"/></a>
     <h2>Saltair Redesign</h2>
     <p>Saltair is a beauty company that specializes in body wash, shampoo, conditioner, and other body care items. For a
       class project, I was assigned with redesigning existing packaging that I was able to find in the store. Instead of
@@ -46,7 +46,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
     <div class="genesislarge">
       <h3>Social Media</h3>
       <div class="genesislargerow">
-      <a href="../../assets/portfolio-items/Curlz-case-study.png"><img src="../../assets/portfolio-items/Curlz-case-study.png"/></a>
+      <a href="https://www.instagram.com/genesiscurlz/"><img src="../../assets/portfolio-items/Curlz-case-study.png"/></a>
         <div class="infoside">
       <h2>Genesis Curlz Social Media</h2>
       <p>One of my creative passions surrounds beauty. Since 2022, I have been working under a Curl Specialist named Jesse
@@ -74,7 +74,7 @@ import PortfolioTemplate from "../../Templates/PortfolioTemplate.vue";
     <div class="saltairlarge">
       <h3>Virtual Mock-up</h3>
       <div class="saltairlargerow">
-        <a href="../../assets/portfolio-items/Saltair-case-study.png"><img src="../../assets/portfolio-items/Saltair-case-study.png"/></a>
+        <a href="https://saltair.com/"><img src="../../assets/portfolio-items/Saltair-case-study.png"/></a>
         <div class="infoside">
           <h2>Saltair Redesign</h2>
           <p>Saltair is a beauty company that specializes in body wash, shampoo, conditioner, and other body care items. For a
@@ -118,7 +118,7 @@ h3 {
 
 p{
   max-width: 100%;
-  text-align: justify;
+  text-align: left;
   padding: 1rem;
 }
 
@@ -144,7 +144,7 @@ p{
 
 .mci{
   display: flex;
-  align-content: left;
+  align-content: flex-start;
   flex-direction: column;
 
   p, h2, h3, a{
